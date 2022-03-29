@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 import ImgBg from '../../images/Pizza.jpg';
 export const HeroContainer =styled.div`
     background: linear-gradient(to right , rgba(0,0,0,0.7),
@@ -45,10 +46,40 @@ export const HeroP = styled.p`
     margin-bottom: 2rem;
 
 `;
-export const HeroBtn = styled.button`
+export const ButtonGroup =styled.div`
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+`;
+export const SignUp = styled(Link)`
     font-size: 1.4rem;
     padding: 1rem 4rem;
     border:none;
+    text-decoration:none;
+    list-style:none;
+    border-radius: 6px;
+    background : #e31837;
+    color : #fff;
+    transition:0.2s ease-out;
+
+
+
+    &:hover {
+        background : #ffc500;
+        transition: 0.2s ease-out;
+        letter-spacing:2px;
+        cursor: pointer;
+        color: #000;
+    }
+`;
+export const SignIn = styled(Link)`
+    margin-left: 20px;
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+    border:none;
+    text-decoration:none;
+    list-style:none;
     border-radius: 6px;
     background : #e31837;
     color : #fff;

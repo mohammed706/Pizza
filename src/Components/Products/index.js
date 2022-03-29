@@ -11,7 +11,7 @@ import {
     ProductPrice,
     ProductButton,
 } from './productElement';
-const Products = ({heading,data}) => {
+const Products = ({heading , data}) => {
     return (
         <ProductsContainer>
            <ProductsHeading>{heading}</ProductsHeading>

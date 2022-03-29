@@ -69,7 +69,7 @@ export const ProductButton = styled.button`
     &:hover {
         background: #ffc500;
         transition: 0.2s ease-in-out;
-        letter-spacing: 2px;
+        /* letter-spacing: 2px; */
         cursor: pointer;
         color:#000;
     }

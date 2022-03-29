@@ -16,6 +16,9 @@ export const NavLink = styled(Link)`
     text-decoration:none;
     align-items:center;
     cursor:pointer;
+    &:hover {
+        color: #e31837 ;
+    }
     @media screen and (max-width : 400px) {
         position:absolute;
         top:10px;
@@ -34,11 +37,14 @@ export const NavIcon = styled.div`
     p { 
         transform: translate(-175% , 100%);
         font-weight: bold;
+       
     }
 
 `;
 export const Bars =styled(FaPizzaSlice)`
     font-size: 2rem;
+    margin-top: 25px;
+    margin-right: 5px;
     transform: translate(-50%,-15%);
 `;
 
